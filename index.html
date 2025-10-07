@@ -77,7 +77,7 @@ MathJax.Hub.Config({
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2503.19443"
+                <a href="https://arxiv.org/pdf/2503.1944322222"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -122,19 +122,19 @@ MathJax.Hub.Config({
         CDC-GS introduces a loss-agnostic visual prior for 3D Gaussian Splatting. Instead of relying on rendering-loss signals that bias toward low-frequency regions, CDC-GS aligns the visual complexity of training views with the spatial density of Gaussian primitives. Visual complexity is measured via high-frequency wavelet responses, while density is computed as the inverse geometric mean distance to neighboring primitives. This consistency-driven allocation enables more accurate modeling of texture-rich areas and efficient pruning elsewhere, yielding higher rendering quality under the same primitive budget. 
         <!-- <span style="color: red;">Clear Object Boundaries for 3DGS Segmentation</span> aims to improve segmentation accuracy by clearly delineating blurry boundaries of interwoven Gaussian primitives within the scene. -->
       </p>
-      <div class="image-container">
+      <!-- <div class="image-container">
         <img src="./static/videos/output_truck.gif" alt="DashGaussian Animation" style="max-width: 100%; height: auto;">
       </div>
       <div class="image-container">
         <img src="./static/videos/output_kitchen.gif" alt="DashGaussian Animation" style="max-width: 100%; height: auto;">
-      </div>
-      <div class="columns is-centered">
+      </div> -->
+      <!-- <div class="columns is-centered">
         <div class="column is-one-fifth has-text-centered">Render</div>
         <div class="column is-one-fifth has-text-centered">SA3D-GS</div>
         <div class="column is-one-fifth has-text-centered">SAGD</div>
         <div class="column is-one-fifth has-text-centered">FlashSplat</div>
         <div class="column is-one-fifth has-text-centered">COB-GS</div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -144,11 +144,11 @@ MathJax.Hub.Config({
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Method Overview</h2>
-        <h3 class="title is-5">Boundary-Adaptive Gaussian Splitting and Boundary-Guided Texture Restoration</h3>
-        <img alt="Architecture" src="./static/images/pipeline.png" width="100%"/>
+        <!-- <h3 class="title is-5">Boundary-Adaptive Gaussian Splitting and Boundary-Guided Texture Restoration</h3> -->
+        <!-- <img alt="Architecture" src="./static/images/pipeline.png" width="100%"/> -->
       </div>
     </div>
-    <div class="content has-text-justified">
+    <!-- <div class="content has-text-justified">
       <p>
         COB-GS is a 3DGS refinement and segmentation method that that jointly optimizes
         semantics and appearance to register semantic masks
@@ -165,8 +165,8 @@ MathJax.Hub.Config({
         refine the scene texture on the correct boundary structure to
         maintain visual quality.
       </p>
-    </div>
-    <div class="columns is-centered has-text-centered">
+    </div> -->
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column">
         <h3 class="title is-5">Robustness Against Erroneous Masks</h3>
         <img alt="Architecture" src="./static/images/edge.png" width="100%"/>
@@ -182,23 +182,23 @@ MathJax.Hub.Config({
         Gaussians, we exclusively enhance robustness of our
         method against inaccurate masks from pre-trained model.
       </p>
-    </div>
+    </div> -->
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <h3 class="title is-5 has-text-centered">Segmentation Evaluation</h3>
-        <div class="content has-text-justified">
+    <!-- <div class="columns is-centered"> -->
+      <!-- <div class="column is-half"> -->
+        <!-- <h3 class="title is-5 has-text-centered">Segmentation Evaluation</h3> -->
+        <!-- <div class="content has-text-justified">
           For segmentation evaluation, we utilize the
           NVOS dataset, which is derived from the LLFF dataset
           and provides ground truth masks with precise object edges.
-        </div>
-        <img alt="Segmentation Evaluation" src="./static/images/table1.png" width="100%"/>
-      </div>
+        </div> -->
+        <!-- <img alt="Segmentation Evaluation" src="./static/images/table1.png" width="100%"/> -->
+      <!-- </div>
       <div class="column is-half">
         <h3 class="title is-5 has-text-centered">Visual Evaluation</h3>
         <div class="content has-text-justified">
@@ -206,8 +206,8 @@ MathJax.Hub.Config({
            and "Complete" better than other comparison methods, highlighting our contribution to boundary optimization.
         </div>
         <img alt="Visual Evaluation" src="./static/images/table2.png" width="100%"/>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
   </div>
 </section>
 
@@ -216,7 +216,7 @@ MathJax.Hub.Config({
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Quantitative Results</h2>
-        <img alt="Architecture" src="./static/images/result1.png" width="100%"/>
+        <!-- <img alt="Architecture" src="./static/images/result1.png" width="100%"/> -->
       </div>
     </div>
   </div>
