@@ -149,24 +149,13 @@ MathJax.Hub.Config({
         <img alt="Architecture" src="./static/images/method.png" width="100%"/>
       </div>
     </div>
-    <!-- <div class="content has-text-justified">
+    <div class="content has-text-justified">
       <p>
-        COB-GS is a 3DGS refinement and segmentation method that that jointly optimizes
-        semantics and appearance to register semantic masks
-        to Gaussian primitives. We
-        introduce mask label as an additional attribute to each Gaussian
-        for segmentation. Moreover, we reveal correlation
-        between the gradient direction of labels and the
-        supervising category at the pixel level, which is a strong discriminator
-        of ambiguous Gaussian primitives on the boundary.
-        Speciffcally, during the mask optimization phase, our
-        approach utilizes gradient statistics of the mask label to identify
-        and split boundary Gaussians, allowing precise alignment
-        with object edges. In the scene optimization phase, we
-        refine the scene texture on the correct boundary structure to
-        maintain visual quality.
+        CDC-GS is a 3DGS densification and pruning method that introduces a loss-agnostic visual prior for primitive allocation.
+        It defines visual complexity from high-frequency DWT components and spatial density from the inverse geometric mean distance to neighboring Gaussians.
+        By enforcing consistency between complexity and density, CDC-GS adaptively densifies under-reconstructed regions and prunes over-reconstructed ones, achieving higher rendering quality under the same Gaussian budget.
       </p>
-    </div> -->
+    </div>
     <!-- <div class="columns is-centered has-text-centered">
       <div class="column">
         <h3 class="title is-5">Robustness Against Erroneous Masks</h3>
