@@ -85,15 +85,6 @@ MathJax.Hub.Config({
                   <span>Paper</span>
                 </a>
               </span>
-              <!-- <span class="link-block">
-                <a href="https://openreview.net/pdf?id=VKJTyhAtoA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
               <span class="link-block">
                 <a href="https://github.com/ZhemengDong/CDC-GS"
                    class="external-link button is-normal is-rounded is-dark">
@@ -120,22 +111,10 @@ MathJax.Hub.Config({
     <div class="content has-text-justified">
       <p> 
         CDC-GS introduces a loss-agnostic visual prior for 3D Gaussian Splatting. Rather than relying on rendering-loss signals biased toward low-frequency regions, CDC-GS aligns visual complexity of training views with the spatial density of Gaussian primitives. This consistency-driven allocation enables more accurate modeling of texture-rich areas and efficient pruning elsewhere, achieving higher rendering quality under the same primitive budget.
-        <!-- <span style="color: red;">Clear Object Boundaries for 3DGS Segmentation</span> aims to improve segmentation accuracy by clearly delineating blurry boundaries of interwoven Gaussian primitives within the scene. -->
       </p>
-      <!-- <img alt="Segmentation Evaluation" src="./static/images/table1.png" width="100%"/> -->
       <div class="image-container">
         <img src="./static/images/teaser.png" style="max-width: 100%; height: auto;">
       </div>
-      <!-- <div class="image-container">
-        <img src="./static/videos/output_kitchen.gif" alt="DashGaussian Animation" style="max-width: 100%; height: auto;">
-      </div> -->
-      <!-- <div class="columns is-centered">
-        <div class="column is-one-fifth has-text-centered">Render</div>
-        <div class="column is-one-fifth has-text-centered">SA3D-GS</div>
-        <div class="column is-one-fifth has-text-centered">SAGD</div>
-        <div class="column is-one-fifth has-text-centered">FlashSplat</div>
-        <div class="column is-one-fifth has-text-centered">COB-GS</div>
-      </div> -->
     </div>
   </div>
 </section>
@@ -156,31 +135,12 @@ MathJax.Hub.Config({
         By enforcing consistency between complexity and density, CDC-GS adaptively densifies under-reconstructed regions and prunes over-reconstructed ones, achieving higher rendering quality under the same Gaussian budget.
       </p>
     </div>
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <h3 class="title is-5">Robustness Against Erroneous Masks</h3>
-        <img alt="Architecture" src="./static/images/edge.png" width="100%"/>
-      </div>
-    </div>
-    <div class="content has-text-justified">
-      <p>
-        In fact, the binary masks predicted by the trained
-        2D vision model exhibit discreteness, which often leads to
-        inaccuracies and inconsistencies in object boundary predictions
-        across different views.
-        By refining tiny boundary
-        Gaussians, we exclusively enhance robustness of our
-        method against inaccurate masks from pre-trained model.
-      </p>
-    </div> -->
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
-      <!-- <div class="column is-half"> -->
-        <!-- <h3 class="title is-5 has-text-centered">Quantitative comparison</h3> -->
     <div class="content has-text-justified">
       <p> 
         CDC-GS consistently surpasses baseline methods under comparable primitive budgets.
@@ -189,16 +149,6 @@ MathJax.Hub.Config({
       </p>
     </div>
         <img alt="Quantitative" src="./static/images/quantitative.png" width="100%"/>
-      <!-- </div>
-      <div class="column is-half">
-        <h3 class="title is-5 has-text-centered">Visual Evaluation</h3>
-        <div class="content has-text-justified">
-          Due to the lack of reference images for object segmentation results, we use CLIP-IQA, a no-reference IQA that evaluates how well an image matches the given text prompt. The result shows that our method matches "Clear", "Smooth"
-           and "Complete" better than other comparison methods, highlighting our contribution to boundary optimization.
-        </div>
-        <img alt="Visual Evaluation" src="./static/images/table2.png" width="100%"/>
-      </div> -->
-    <!-- </div> -->
 </section>
 
 <section class="section">
